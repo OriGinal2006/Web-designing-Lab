@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        padding: 40px 7%;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #1f2937;
+        line-height: 1.6;
+    }
+
+    h1 {
+        color: #173b67;
+        margin: 35px 0 25px;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    body > h1:first-of-type {
+        margin-top: 0;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #2f80ed;
+    }
+
+    img {
+        display: block;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid white;
+        box-shadow: 0 8px 24px rgba(0,0,0,.15);
+        margin: 0 0 25px 30px;
+    }
+
+    b {
+        display: inline-block;
+        color: #173b67;
+        margin-top: 10px;
+    }
+
+    p {
+        margin: 4px 0 12px;
+    }
+
+    body > p {
+        background: white;
+        padding: 18px 22px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,.06);
+    }
+
+    a {
+        display: inline-block;
+        margin: 6px 0;
+        color: #1769aa;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    table {
+        width: 100%;
+        max-width: 1100px;
+        margin: 25px auto 45px;
+        border-collapse: collapse;
+        background: white;
+        border: none !important;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0,0,0,.08);
+    }
+
+    th {
+        background: #173b67;
+        color: white;
+        padding: 14px 10px;
+        text-align: center;
+    }
+
+    td {
+        padding: 12px 10px;
+        text-align: center;
+        border: 1px solid #e5e7eb;
+    }
+
+    tr:nth-child(even) td {
+        background: #f8fafc;
+    }
+
+    tr:hover td {
+        background: #eef6ff;
+    }
+
+    ol, ul {
+        margin: 0;
+        padding-left: 22px;
+        text-align: left;
+    }
+
+    form {
+        max-width: 650px;
+        margin: 20px auto 0;
+        padding: 30px;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    }
+
+    form label {
+        display: inline-block;
+        margin: 10px 8px 8px 0;
+        font-weight: 600;
+        color: #374151;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%;
+        padding: 12px 14px;
+        margin-bottom: 8px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        font-size: 15px;
+        outline: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus {
+        border-color: #2f80ed;
+        box-shadow: 0 0 0 3px rgba(47,128,237,.12);
+    }
+
+    input[type="radio"] {
+        accent-color: #2f80ed;
+        margin-left: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 11px 24px;
+        margin: 18px 8px 0 0;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    input[type="submit"] {
+        background: #2f80ed;
+        color: white;
+    }
+
+    input[type="reset"] {
+        background: #e5e7eb;
+        color: #374151;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 10px rgba(0,0,0,.12);
+    }
+
+    @media (max-width: 700px) {
+        body {
+            padding: 25px 4%;
+        }
+
+        img {
+            width: 130px;
+            height: 130px;
+        }
+
+        table {
+            font-size: 12px;
+            display: block;
+            overflow-x: auto;
+        }
+
+        form {
+            padding: 20px;
+        }
+    }
+</style>
+
+<h1 align = "center"> STUDENT DETAILS </h1>
+</head>
+<img src = "profile.png" alt = "profile picture" align = "right" height = "200" width = "400">
+<body>
+<b> Student Name: </b>
+<p> Dravin Khajuria </p>
+<b>  Roll no: </b>
+<p>  2512015 </p>
+<b> Course Name: </b>
+<p>  Bachelor of technology </p>
+<b> Branch Name: </b>
+<p> Computer Science and Engineering </p>
+<b> College Name: </b>
+<p> Government College of Engineering and technology,Jammu  </p>
+
+<h1 align = "center"> Student Description </h1>
+<p> Hi, I am dravin. I am a second year CSE Student at GCET Jammu. I am really interested in technology, especially software development and AI/ML. I am currently working on building my skills in programming, web development and problem solving.</p>
+
+<a href = "http://coe.gcetj.ac.in">college website </a> <br>
+<a href = "https://w3schools.com"> educational website </a> <br>
+</body>
+<table border = 1 align = "center" >
+<tr>
+<th> EDUCATIONAL QUALIFICATION</th> <th>HOBBIES</th> 
+</tr>
+<tr>
+<td>
+<ol>
+<li> schooling till 12th </li>
+<li> currently a college student </li>
+</ol>
+</td>
+<td>
+ <ul>
+ <li> Sports</li>
+<li> gaming</li>
+</td>
+</tr>
+</table>
+<h1 align = "center"> CLASS TIMETABLE </h1>
+
+<table align = "center" border="1">
+<tr>
+<th> "Period"</th>
+<th> 9:00-10:00</th>
+<th>10:00-11:00</th>
+<th> 11:00-12:00</th>
+<th> 12:00-1:00</th>
+<th> 1:00-2:00</th>
+<th> 2:00-3:00</th>
+<th> 3:00-4:00</th>
+<th> 4:00-5:00</th>
+</tr>
+ <tr>
+<td> Monday</td>
+<td> Digital</td>
+<td>web</td>
+<td> enter</td>
+<td> oops<hr> Digital</td>
+<td rowspan=5> Break</td>
+<td> Mathematics<br></td>
+<td colspan =2 > Digital<br></td>
+
+</tr>
+<tr>
+<td> Tuesday</td>
+<td> Enter</td>
+<td>web</td>
+<td>  Digital</td>
+<td> Mathematics</td>
+<td colspan =3> Digital</t><hr>web lab</td>
+</tr>
+
+<tr>
+<td> Wednesday</td>
+<td> MOOC</td>
+<td>oops</td>
+<td>WEB</td>
+<td> Digital </td>
+<td> Mathematics</td>
+<td colspan =3> OOPS<hr> WEB</td>
+</tr>
+
+<tr>
+<td> Thursday</td>
+<td> Digital<hr> Enter</td>
+<td>web</td>
+<td> cyber</td>
+<td> oops</td>
+<td> Entrepreneur</td>
+<td colspan =3> Digital</td>
+</tr>
+
+<tr>
+<td> Friday</td>
+<td> oops</td>
+<td>math</td>
+<td> cyber</td>
+<td> web<hr> Mathematics</td>
+<td> Digital<hr>OOPS</td>
+<td > Department activity</td>
+<td>Library</td>
+</tr>
+</table>
+<h1> STUDENT REGISTRATION FORM </h1>
+<form>
+<label for="name">Full -name:</label>
+<input type="text"id="name" placeholder="Enter your name" required ><br>
+<label for="email">Email:</label>
+<input type="email"id="email" placeholder="Enter your email" required ><br>
+<label for="Phone">Phone number:</label>
+<input type="number"id="Phone" placeholder="Enter your phone number" required ><br>
+<label >Gender:</label>
+<input type="radio" id="male" name="gender" value="male" checked><label for ="male">Male</label>
+<input type="radio" id="female" name="gender" value="female" checked><label for ="female">female</label>
+<input type="radio" id="female" name="gender" value="female" checked><label for ="female">other</label> <br>
+<form action = "thanku.html"> 
+<input type ="reset" value ="reset">
+<input type ="submit" value ="submit">
+</form>
+
+
+</html>
+
+
