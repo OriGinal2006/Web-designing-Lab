@@ -1,0 +1,222 @@
+
+/* =================================
+   1. GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F6F8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =================================
+   2. HEADER
+================================= */
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+header h2 {
+    color: #172B4D;
+    font-size: 26px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: #333333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav a:hover,
+header nav a[aria-current="page"] {
+    color: #E87952;
+}
+
+
+/* =================================
+   3. MAIN CONTENT
+================================= */
+
+main {
+    padding: 40px 8%;
+}
+
+main > section:first-child {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+main > section:first-child h1 {
+    color: #172B4D;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+/* =================================
+   4. CATEGORY SECTIONS
+================================= */
+
+main > section:not(:first-child) {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+main > section h2 {
+    color: #172B4D;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+
+/* =================================
+   5. CATEGORY CARDS
+================================= */
+
+main > section article {
+    max-width: 500px;
+}
+
+main > section article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+main > section article h3 {
+    color: #172B4D;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+main > section article p {
+    margin-bottom: 18px;
+}
+
+
+/* =================================
+   6. CATEGORY LINKS
+================================= */
+
+main > section article a {
+    display: inline-block;
+    background-color: #E87952;
+    color: #FFFFFF;
+    padding: 11px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+main > section article a:hover {
+    background-color: #CF603B;
+}
+
+
+/* =================================
+   7. FOOTER
+================================= */
+
+footer {
+    background-color: #172B4D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px 8%;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+footer a:hover {
+    color: #E87952;
+}
+
+footer > p:last-child {
+    color: #C4CEDB;
+    font-size: 14px;
+}
+
+
+/* =================================
+   8. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        padding: 25px 5%;
+    }
+
+    main > section:first-child h1 {
+        font-size: 29px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    main > section:not(:first-child) {
+        padding: 18px;
+    }
+
+    main > section article img {
+        height: 180px;
+    }
+
+}
